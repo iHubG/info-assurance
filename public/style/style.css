@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+    /* Login */
+#login-box {
+    border-radius: 20px;
+}
+
+#login-body {
+    height: 100vh;
+    background-color: #F9F6EE;
+}
+
+#login-left {
+    background-image: url(../img/isu-blur.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    height: 600px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#isu-icon {
+    width: 200px;
+}
+
+h2#login-as {
+    margin-top: 5rem;
+    text-shadow: 1px 1px #C0C0C0;
+}
+
+a.login-button {
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #22DD22;
+    font-size: 1.1rem;
+}
+
+a.login-button:hover {
+    background-color: #009E60;
+}
+
+img#question-mark {
+    cursor: pointer;
+    width: 40px;
+    float: right;
+    margin-top: 3rem;
+    margin-right: 1.5rem;
+}
+
+img#question-mark:hover, i.back:hover{
+    opacity: 0.7;
+}
+
+@media (min-width: 300px) and (max-width: 767px){
+
+    #login-left {
+        border-radius: 20px 20px 0px 0px;
+        background-image: none;
+        height: auto;
+    }
+
+    #isu-icon {
+        width: 100px;
+        margin-top: 2rem;
+    }
+
+    #login-box {
+        background-color: #ffff;
+        background-size: cover;
+        background-position: center;
+    }
+
+    a.login-button {
+        width: 70%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    h2#login-as {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    img#question-mark {
+        width: 30px;
+        float: right;
+        margin-top: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    #login-left {
+        border-radius: 20px 20px 0px 0px;
+        background-image: none;
+        height: auto;
+    }
+
+    #login-box {
+        background-color: #ffff;        
+        background-size: cover;
+        background-position: center;
+    }
+
+    #isu-icon {
+        width: 180px;
+        margin-top: 2rem;
+    }
+
+    img#question-mark {
+        width: 30px;
+        float: right;
+        margin-top: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px){
+
+    #login-box {
+        height: 450px;
+    }
+
+    #login-left {
+        height: 450px;
+    }
+
+    #login-right {
+        height: 450px;
+        background-color: #ffff;
+        border-radius: 0px 20px 20px 0px;
+    }
+    
+    h2#login-as {
+        margin-top: 4rem;
+        text-shadow: 1px 1px #C0C0C0;
+    }
+
+    img#question-mark {
+        width: 30px;
+        margin-top: 2rem;
+        margin-right: 1.5rem;
+    }
+
+    a.login-button {
+        padding: 12px;
+    }
+    
+}
+
+@media (min-width: 1301px) {
+
+    #login-right {
+        border-radius: 0px 20px 20px 0px;
+        background-color: #ffff;
+    }
+
+    img#question-mark {
+        width: 40px;
+        margin-top: 5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+/* Admin Dashboard */
+#admin-sidebar {
+    background-color: #36454F;
+    position: fixed;
+    color: #ffff;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full height of viewport */
+}
+
+.dash-nav {
+    width: 100%;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.dash-nav:hover, .dash-nav.active {
+    opacity: 1;
+    background-color: #28282B;
+}
+
+.active {
+    opacity: 1;
+    background-color: #28282B;
+}
+
+.logout-box {
+    width: 100%;
+}
+
+.logout-nav {
+    width: 100%;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.logout-nav:hover {
+    opacity: 1;
+}
+
+#admin-main-content {
+    background-color: #F9F6EE;
+    height: auto;
+}
+
+@media (min-width: 300px) and (max-width: 991px) {
+
+    i#burger-menu {
+        cursor: pointer;
+    }
+
+    #offcanvasScrolling {
+        background-color: #36454F;
+        color: #ffff;
+    }
+
+}
+
+#admin-prof-logo, i#add-logo, a.cursor-pointer, i.cursor-pointer, span.password-toggle-icon, #instructor-logo, #student-logo {
+    cursor: pointer;
+}
+
+hr.bottom-rule {
+    width: 100%;
+}
+
+i.add-icon {
+    width: fit-content;
+    cursor: pointer;
+    float: right;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+/* Custom Tooltip */
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+}
+
+img.admin-circle-logo, img.instructor-circle-logo, img.student-circle-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+
+    img.instructor-circle-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Chat */
+#chat-box {
+    background-color: #ffff;
+    height: 70vh;
+}
+
+#chat-send-box {
+    background-color: #ffff;
+    height: 15vh;
+}
+
+/* Hover logout */
+a#instructor-logout, a#student-logout  {
+    background-color: #36454F;
+    opacity: 0.9;
+}
+
+a#instructor-logout:hover, a#student-logout:hover {
+    background-color: #36454F;
+    opacity: 1;
+}
+
+
+.card-shadow:hover {
+    box-shadow: 0px 0px 10px 0px #C0C0C0;
+}
+
+
+
+
+
+
