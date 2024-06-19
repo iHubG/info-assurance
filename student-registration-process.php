@@ -65,10 +65,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Insert the new student record
     $studentId = insertStudent($pdo, $fname, $lname, $dbirth, $username, $password);
 
+    $response = array("message" => "Registration successful");
+    echo json_encode($response);
+    exit;
+
 } else {
     // If there are validation errors, return them as JSON
     http_response_code(400); // Set HTTP response status code to 400 (Bad Request)
     echo json_encode($errors); // Return validation errors as JSON
+    exit;
 }
 
 

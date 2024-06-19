@@ -62,9 +62,9 @@ $(document).ready(function() {
                     // Display success message below the password field
                     $('#password-error').html("<div class='text-success text-center mt-3'>Registration successful!</div>");
 
-                    // Optionally, redirect after success
+                    // Reload the page after a short delay (e.g., 1 second)
                     setTimeout(function() {
-                        window.location.href = 'success.php'; // Redirect to success page
+                        location.reload(); // Reload the current page
                     }, 1000); // 1000 milliseconds = 1 second
                 },
                 error: function(xhr, status, error) {
